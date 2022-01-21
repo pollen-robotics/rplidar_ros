@@ -1,3 +1,7 @@
+# Ce dépôt nous a été envoyé par mail
+Ca semble être une version instable de la branche ros2 avec une update pour le RPLIDAR S2. 
+Je créé un dépôt ici pour pouvoir itérer dessus mais il faudra merge avec leur version officielle quand elle sortira.
+
 # RPLIDAR ROS2 Package
 
 ROS2 node for RPLIDAR
