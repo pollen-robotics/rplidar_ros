@@ -14,15 +14,10 @@ def generate_launch_description():
     serial_port = LaunchConfiguration('serial_port', default='/dev/ttyUSB0')
     serial_baudrate = LaunchConfiguration(
         'serial_baudrate', default='1000000')  # for s2 is 1000000
-    frame_id = LaunchConfiguration('frame_id', default='laser')
+    frame_id = LaunchConfiguration('frame_id', default='lidar_link')
     inverted = LaunchConfiguration('inverted', default='false')
     angle_compensate = LaunchConfiguration('angle_compensate', default='true')
     scan_mode = LaunchConfiguration('scan_mode', default='DenseBoost')
-
-    rviz_config_dir = os.path.join(
-        get_package_share_directory('rplidar_ros2'),
-        'rviz',
-        'rplidar_ros2.rviz')
 
     return LaunchDescription([
 
@@ -68,10 +63,4 @@ def generate_launch_description():
                          'scan_mode': scan_mode}],
             output='screen'),
 
-        Node(
-            package='rviz2',
-            executable='rviz2',
-            name='rviz2',
-            arguments=['-d', rviz_config_dir],
-            output='screen'),
     ])
