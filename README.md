@@ -1,6 +1,7 @@
-# Ce dépôt nous a été envoyé par mail
-Ca semble être une version instable de la branche ros2 avec une update pour le RPLIDAR S2. 
-Je créé un dépôt ici pour pouvoir itérer dessus mais il faudra merge avec leur version officielle quand elle sortira.
+# Note about this repository
+This repository was sent by the RP LIDAR team directly as a temporary fix since the public version at https://github.com/Slamtec/rplidar_ros doesn't work for the RP LIDAR S2 currently.
+
+Once they fix it, this repository will be deleted and we'll use https://github.com/Slamtec/rplidar_ros instead.
 
 # RPLIDAR ROS2 Package
 
